@@ -8,7 +8,7 @@ jobs:
 
             - name: Build and move from dist to root
               run: |
-                  rm -rf assets index.html *.webp
+                  rm -rf index.html *.webp *.css *.js
                   cd source-code/
                   npm i
                   npm run build
