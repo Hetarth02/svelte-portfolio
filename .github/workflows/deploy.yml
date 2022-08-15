@@ -11,15 +11,10 @@ jobs:
                   cd source-code/
                   npm i
                   npm run build
-                  cat index.html
-                  ls dist/
-                  echo "\n1 ls"
+                  sudo mv dist/* ../
+                  rm -rf dist node_modules
                   ls
-                  echo "2 ls"
-                  ls ./
-                  echo "3 ls"
                   ls ../
-                  # sudo mv dist/* ../
             # - name: Commit files
             #   run: |
             #       git add .
