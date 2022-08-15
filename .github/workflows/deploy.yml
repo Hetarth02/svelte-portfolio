@@ -13,10 +13,11 @@ jobs:
                   npm run build
                   sudo mv dist/* ../
                   rm -rf dist node_modules
+
             - name: Commit files
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
                   git add .
-                  git commit -m "Add changes"
+                  git commit -m "Deployment building through automated changes by Hetarth Shah using Github Actions"
                   git push
