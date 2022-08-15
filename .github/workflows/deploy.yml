@@ -11,8 +11,6 @@ jobs:
                   ls
                   cd source-code/
                   ls
-                  rm rf dist/
-                  ls
                   npm i
                   ls
                   npm run build
