@@ -12,11 +12,7 @@ jobs:
       - name: NPM Install
         run: npm i
 
-      - name: Build and move from dist to deploy folder
+      - name: Build and move from dist to root
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
           npm run build
-          mkdir deploy
-          ls
-          mv dist/* deploy/
+          mv dist/* /
