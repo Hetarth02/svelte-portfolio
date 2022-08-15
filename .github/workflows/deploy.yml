@@ -13,10 +13,8 @@ jobs:
                   npm run build
                   sudo mv dist/* ../
                   rm -rf dist node_modules
-                  ls
-                  ls ../
-            # - name: Commit files
-            #   run: |
-            #       git add .
-            #       git commit -m "Add changes"
-            #       git push
+            - name: Commit files
+              run: |
+                  git add .
+                  git commit -m "Add changes"
+                  git push
