@@ -17,6 +17,8 @@ jobs:
                   echo "\n"
                   ls
                   npm run build
+                  cat index.html
+                  ls dist/
                   echo "\n1 ls"
                   ls
                   echo "2 ls"
