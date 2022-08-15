@@ -8,14 +8,8 @@ jobs:
 
             - name: Build and move from dist to root
               run: |
-                  ls
-                  echo "\n"
                   cd source-code/
-                  ls
-                  echo "\n"
                   npm i
-                  echo "\n"
-                  ls
                   npm run build
                   cat index.html
                   ls dist/
