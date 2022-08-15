@@ -15,4 +15,4 @@ jobs:
       - name: Build and move from dist to root
         run: |
           npm run build
-          mv dist/* /
+          sudo mv dist/* /
