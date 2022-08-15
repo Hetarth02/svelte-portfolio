@@ -8,14 +8,20 @@ jobs:
 
             - name: Build and move from dist to root
               run: |
+                  ls
                   cd source-code/
+                  ls
+                  rm rf dist/
+                  ls
                   npm i
+                  ls
                   npm run build
-                  sudo mv dist/* ./
-            - name: Commit files
-              run: |
-                  git config --local user.email "action@github.com"
-                  git config --local user.name "GitHub Action"
-                  git add .
-                  git commit -m "Add changes"
-                  git push
+                  ls
+                  ls ./
+                  ls ../
+                  # sudo mv dist/* ../
+            # - name: Commit files
+            #   run: |
+            #       git add .
+            #       git commit -m "Add changes"
+            #       git push
